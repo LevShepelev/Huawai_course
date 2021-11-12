@@ -3,6 +3,10 @@
         "cmath": "cpp",
         "limits": "cpp",
         "stdio.h": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "stack.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c"
     }
 }

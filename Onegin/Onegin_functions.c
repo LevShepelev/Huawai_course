@@ -50,7 +50,6 @@ int cmp1 (const void* qtext1, const void* qtext2)
     }
 
 
-
 /// \brief Rhyme Comparator, it compare symbols of 2 strings from the end of strings
 int cmp2 (const void* qtext1, const void* qtext2)
     {
@@ -77,7 +76,6 @@ int cmp2 (const void* qtext1, const void* qtext2)
     }
 
 
-
 /// \brief The function prints text to file
 void textprintf(struct str* text, int numb, FILE* fout)
     {
@@ -96,7 +94,6 @@ void textprintf(struct str* text, int numb, FILE* fout)
     }   
 
 
-
 /// \brief The function count number of lines in the text
 int linecount(char* buf, const int value)
     {
@@ -110,7 +107,6 @@ int linecount(char* buf, const int value)
         }
     return linecounter + 1;
     }
-
 
 
 /// \brief The function fill array of struct from bufer
@@ -127,7 +123,6 @@ void filltext(char* buf, struct str* text, const int numb)
     }
 
 
-
 /// \brief The function count length of each string in text
 void length_of_strings(const char* buf, struct str* text, const int numb, int value)
     {
@@ -142,8 +137,6 @@ void length_of_strings(const char* buf, struct str* text, const int numb, int va
                 }
             }
     }
-
-
 
 
 /// \brief The function allocate memory safely
@@ -190,6 +183,7 @@ void finishing(char* buf, struct str* text)
     free(buf);
     free(text);
     }
+
 
 /// \brief My qsort
 void Qsort(void* arr, int arr_size, int elem_size, int (*comparator) (const void *, const void *))

@@ -1,13 +1,6 @@
 #ifndef SQUARE_EQUATION
 #define SQUARE_EQUATION
 
-#include <stdio.h>
-#include <math.h>
-#include <assert.h>
-#include <ctype.h>
-#include <float.h>
-
-
 #define number_of_tests 3
 
 void read (double* a);

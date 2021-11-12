@@ -1,4 +1,11 @@
 #include "Square_equation.h"
+#include <stdio.h>
+#include <math.h>
+#include <assert.h>
+#include <ctype.h>
+#include <float.h>
+
+
 
 /// \brief Function compare double number with zero
 int Is_zero (double a)
@@ -27,15 +34,15 @@ int Solvelinear (double b, double c, double* adr1)
         return 1;
         }
 
-    if (Is_zero (b) == 0 && Is_zero (c) == 0)
+    if (Is_zero (b) && Is_zero (c))
         {
-        printf ("Infinite number of roots");
+        printf ("Infinite number of roots\n");
         return -1;
         }
 
-    if (((Is_zero (b) == 0) && ((int)fabs(Is_zero (c)) == 1)))
+    if (Is_zero (b) && !Is_zero(c))
         {
-        printf ("No roots");
+        printf ("No roots\n");
         return 0;
         }
     }
@@ -95,7 +102,7 @@ void read (double* a)
             if ((num[i] == ',') || (num[i] == '.'))
                 npoint++;
             // isdigit() 
-            if ((isdigit(num[i]) && (num[i] != '.') && (num[i] != ','))
+            if ((((num[i] > '9') || (num[i] < '0')) && (num[i] != '.') && (num[i] != ','))
             || (npoint > 1) || (num[0] == ',') || (num[0] == '.'))
                 {
                 err = 1;
