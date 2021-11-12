@@ -1,0 +1,54 @@
+push 0
+pop rax
+push 0
+pop rcx
+L3:
+call Line_Of_Symb:
+call INCrcx:
+push 10
+pop rsi
+push rcx
+jmpb L3:
+graphics
+exit
+
+
+INCrax:
+push rax
+push 1
+add
+pop rax
+ret
+
+INCrcx:
+push rcx
+push 1
+add
+pop rcx
+ret
+
+Line_Of_Symb:
+push rax
+pop rbx
+push rcx
+push rax
+add
+pop rsi
+L1:
+push 124
+popg [rax]
+call INCrax:
+push rax
+jmpb L1:
+
+push rbx
+push 50
+add
+pop rsi
+L2:
+push 0
+popg [rax]
+call INCrax:
+push rax
+jmpb L2:
+ret

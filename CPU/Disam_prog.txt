@@ -1,0 +1,72 @@
+scanf 
+scanf 
+scanf 
+pop [2.000000]
+pop [1.000000]
+pop [0.000000]
+push [0.000000]
+push 0.000000
+pop rsi 
+
+jmpe L0: 
+push 4.000000
+push [0.000000]
+push [2.000000]
+mul 
+mul 
+push [1.000000]
+push [1.000000]
+mul 
+sub 
+pop rdx h
+push rdx u
+debug 
+push 0.000001
+pop rsi a
+jmpa L1: 
+push -0.00000
+pop rsi x
+push rdx x
+jmpa L2: 
+exit 
+L1: 
+push rdx 3
+sqrt 
+pop [3.000000]
+push [0.000000]
+push 2.000000
+mul 
+push [3.000000]
+push [1.000000]
+push -1.00000
+mul 
+sub 
+divD 
+printf 
+push 2.000000
+push [0.000000]
+mul 
+push [3.000000]
+push [1.000000]
+push -1.00000
+mul 
+add 
+divD 
+printf 
+exit 
+L2: 
+push -2.00000
+push [0.000000]
+push [1.000000]
+div 
+div 
+printf 
+exit 
+L0: 
+push [1.000000]
+push [2.000000]
+push -1.00000
+mul 
+divD 
+printf 
+exit 

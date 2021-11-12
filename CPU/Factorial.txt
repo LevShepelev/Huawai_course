@@ -1,0 +1,28 @@
+push 9
+pop rsi; ищем факториал 9
+push 1
+pop rax
+push 2 
+pop rcx
+call Factorial:
+push rax
+printf
+exit
+
+Factorial:
+push rax
+push rcx
+mul
+printf
+pop rax
+call INCrcx:
+push rcx
+jbe Factorial:
+ret
+
+INCrcx:
+push rcx
+push 1
+add
+pop rcx
+ret

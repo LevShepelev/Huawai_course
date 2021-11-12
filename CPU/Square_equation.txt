@@ -1,0 +1,74 @@
+scanf; вводим a
+scanf; вводим b
+scanf; вводим c
+pop [2]; c
+pop [1]; b
+pop [0]; a
+push [0]
+push 0
+pop rsi
+jmpe Linear:
+push 4
+push [0]
+push [2]
+mul
+mul
+push [1]
+push [1]
+mul; получили b^2
+sub
+pop rdx; дискриминант
+push rdx
+debug
+push 0.000001
+pop rsi
+jmpa two_roots:
+push -0.000001
+pop rsi
+push rdx
+jmpa one_root:
+exit
+
+two_roots:
+push rdx
+sqrt
+pop [3]; sqrt(D)
+push [0]
+push 2
+mul
+push [3]
+push [1]
+push -1
+mul
+sub
+divD
+printf
+push 2
+push [0]
+mul
+push [3]
+push [1]
+push -1 
+mul 
+add
+divD
+printf
+exit
+
+one_root:
+push -2
+push [0]
+push [1]
+div
+div
+printf
+exit
+
+Linear:
+push [1]
+push [2]
+push -1
+mul
+divD
+printf
+exit
