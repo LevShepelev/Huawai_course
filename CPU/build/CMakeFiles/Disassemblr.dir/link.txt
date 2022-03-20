@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra  -g  -rdynamic CMakeFiles/Disassemblr.dir/source/Disassemblr.cpp.o  -o Disassemblr 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lev/Huawai_course/CPU/include/Disasembler.h
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+sys/stat.h
+-
+cstring
+-
+iostream
+-
+
+/home/lev/Huawai_course/CPU/source/Disassemblr.cpp
+../include/Disasembler.h
+/home/lev/Huawai_course/CPU/include/Disasembler.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra  -g  -rdynamic CMakeFiles/Assembler.dir/source/Assembler.cpp.o  -o Assembler 

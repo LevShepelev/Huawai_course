@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lev/Huawai_course/CPU/include/Assembler.h
+stdio.h
+-
+sys/stat.h
+-
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/lev/Huawai_course/CPU/source/Assembler.cpp
+../include/Assembler.h
+/home/lev/Huawai_course/CPU/include/Assembler.h
+

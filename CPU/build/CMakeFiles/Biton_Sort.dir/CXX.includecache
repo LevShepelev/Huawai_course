@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lev/Huawai_course/CPU/include/CPU.h
+stdio.h
+-
+stdlib.h
+-
+sys/stat.h
+-
+string.h
+-
+math.h
+-
+../../Stack/Stack.c
+/home/lev/Huawai_course/Stack/Stack.c
+cassert
+-
+
+/home/lev/Huawai_course/CPU/source/CPU.cpp
+../include/CPU.h
+/home/lev/Huawai_course/CPU/include/CPU.h
+
+/home/lev/Huawai_course/Stack/Stack.c
+Stack.h
+/home/lev/Huawai_course/Stack/Stack.h
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+
+/home/lev/Huawai_course/Stack/Stack.h
+

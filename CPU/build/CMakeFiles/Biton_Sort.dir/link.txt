@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra  -g  -rdynamic CMakeFiles/Biton_Sort.dir/source/Assembler.cpp.o CMakeFiles/Biton_Sort.dir/source/CPU.cpp.o CMakeFiles/Biton_Sort.dir/source/Disassemblr.cpp.o  -o Biton_Sort 

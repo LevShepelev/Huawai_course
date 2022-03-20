@@ -4,7 +4,7 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <math.h>
-#include "../Stack/Stack.c"
+#include "../../Stack/Stack.c"
 #include <cassert>
 
 

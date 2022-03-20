@@ -1,0 +1,5 @@
+/home/lev/Huawai_course/CPU/build/CMakeFiles/edit_cache.dir
+/home/lev/Huawai_course/CPU/build/CMakeFiles/Assembler.dir
+/home/lev/Huawai_course/CPU/build/CMakeFiles/rebuild_cache.dir
+/home/lev/Huawai_course/CPU/build/CMakeFiles/Disassemblr.dir
+/home/lev/Huawai_course/CPU/build/CMakeFiles/CPU.dir

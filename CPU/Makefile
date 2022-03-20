@@ -1,9 +1,9 @@
 all: build run	
 
 build:
-	g++ -g Assembler.cpp -o Assembler
-	g++ -c -g CPU.cpp  ../Stack/Stack.c
-	g++ CPU.o ../Stack/Stack.o -o CPU -lm
+	g++ -g sourseAssembler.cpp -o build/Assembler
+	g++ -c -g source/CPU.cpp  ../Stack/Stack.c
+	g++ build/CPU.o ../Stack/Stack.o -o build/CPU -lm
 run:
-	./Assembler CMD_ENG.txt
-	./CPU Commands.txt
+	./build/Assembler build/CMD_ENG.txt
+	./build/CPU build/Commands.txt
